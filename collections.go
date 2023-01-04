@@ -1,4 +1,4 @@
-package goterator
+package gocollections
 
 import "errors"
 

@@ -1,4 +1,4 @@
-package goterator
+package gocollections
 
 // Iterator base interface for iterators
 type Iterator[T any] interface {

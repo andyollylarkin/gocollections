@@ -1,3 +1,3 @@
-module github.com/andyollylarkin/goterator
+module github.com/andyollylarkin/gocollections
 
 go 1.19
