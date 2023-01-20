@@ -18,6 +18,8 @@ type Collection[T any] interface {
 // ForEach do iteration over struct which implement Iterator interface
 func ForEach[T any](iterator Iterator[T], forBody func(element *T)) {
 	for iterator.HasNext() {
-		forBody(iterator.GetNext())
+		forBody(iterator.Current())
+		iterator.GetNext()
 	}
+	forBody(iterator.Current()) // execute for last element of collection
 }
